@@ -42,6 +42,7 @@ const Container = styled.div`
   @media (min-width: 500px) {
     padding: 0vh 0vw 20vh 0vw;
   }
+  z-index: -1;
   top: 100vh;
   left: 10vw;
   width: 80%;

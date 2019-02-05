@@ -39,6 +39,7 @@ const Container = styled.div`
 {
   width: 80%;
   margin: auto;
+  z-index: -1;
 }
 `
 

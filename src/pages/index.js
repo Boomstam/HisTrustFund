@@ -39,7 +39,7 @@ const Title = styled.div`
   font-size: 10vmin;
   text-align: center;
   margin: 10vh 0vw 0vh 0vw;
-
+  
   @media (min-width: 550px) {
     margin: 3vh 0vw 2vh 0vw;
   }
