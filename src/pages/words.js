@@ -9,8 +9,27 @@ const Words = () => (
   <>
     <Layout>
     </Layout>
-    <Lyrics/>
+
+    <Lyrics />
   </>
 )
+
+/*
+<Paragraph>
+      It's a smack in the face or a kiss of the lips
+            </Paragraph>
+    <Paragraph>
+      and little in between
+            </Paragraph>*/
+const Paragraph = styled.div`
+{
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 4vmin;
+  padding: 0vh 0vw 1vh 0vw;
+}
+`
+
 
 export default Words;

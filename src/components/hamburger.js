@@ -14,7 +14,7 @@ const Hamburger = ({ children }) => (
     query={graphql`
         query HamburgerQuery {
 
-          allFile (filter:{ relativePath:{ eq:"line.png" } }){
+          allFile (filter:{ relativePath:{ eq:"whiteLine.png" } }){
            edges {
              node {
               childImageSharp{
@@ -46,13 +46,26 @@ const Hamburger = ({ children }) => (
 
 const StyledHamburger = styled.div`
 
-  
+  position: fixed;
+  top: 0;
+  left: 1vw
+
+  width: 20vmin;
+
+  &:hover {
+    width: 22vmin;
+  }
 `
+
+/*
+  position: fixed;
+  top: 0;
+  left: 1vw;*/
 
 const StyledImg = styled(Img)`
   
-  width: 15vmin;
-
+  
+  margin: 2vh 5vw 0vh 0vw;
 `
 
 export default Hamburger;

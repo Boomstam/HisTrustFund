@@ -1,38 +1,71 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Cover from '../components/cover'
 import styled from 'styled-components';
+import Hoes from '../components/hoes'
+import * as Scroll from 'react-scroll'
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
+function epClick()
+{
+  console.log("epCLick");
+
+  scroll.scrollToBottom();
+}
 
 const IndexPage = () => (
+  
   <>
-      <Background/>
-      <Layout>
-      </Layout>
-      <Cover/>
-      </>
+    <Layout>
+    </Layout>
+    
+    <Title>
+      His Trust Fund
+    </Title>
+    <Cover />
+    <EPText onClick={epClick}>
+      EP out now
+    </EPText>
+  <Hoes/>
+  </>
 )
 
-const Background = styled.div`
+//<a id="header" href="[your link]">Logo</a>
+
+const Title = styled.div`
 {
-    z-index: -2;
-    position: absolute;
-    padding:0;
-    margin:0;
+  color: white;
+  font-size: 10vmin;
+  text-align: center;
+  margin: 10vh 0vw 0vh 0vw;
 
-    top:0;
-    left:0;
-
-    width: 100%;
-    height: 100%;
-
-    background-image: radial-gradient(rgba(50, 79, 111, 0.7), white);
-    background-size: cover;
+  @media (min-width: 550px) {
+    margin: 3vh 0vw 2vh 0vw;
   }
-  `
-  //background-color: rgba(50, 79, 111, 1);
-  //background-color: rgba(157, 192, 216, 1);
-  //background-color: rgba(50, 85, 139, 1);
+}
+`
 
-export default IndexPage
+const EPText = styled.div`
+{
+  color: white;
+  font-size: 6vmin;
+  text-align: center;
+  margin: 10vh 0vw 0vh 0vw;
+
+  @media (min-width: 650px) {
+    margin: 5vh 0vw 0vh 0vw;
+  }
+
+  @media (min-width: 1150px) {
+    margin: 4vh 0vw 0vh 0vw;
+  }
+
+  &: hover {
+    font-size: 7vmin;
+    transform: translate(0, -1vh);
+  }
+}
+`
+
+export default IndexPage;

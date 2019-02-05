@@ -13,6 +13,26 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `lyrics`,
+        path: `${__dirname}/src/lyrics`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pdf`,
+        path: `${__dirname}/src/pdf`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+        options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

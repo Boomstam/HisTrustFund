@@ -81,7 +81,7 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-export default SEO
+export default SEO;
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {

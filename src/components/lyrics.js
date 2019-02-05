@@ -8,11 +8,11 @@ const Lyrics = ({ children }) => (
     query={graphql`
         query LyricsQuery {
 
-          allFile (filter:{ relativePath:{ eq:"allegory.png" } }){
+          allFile (filter:{ ext:{ eq:".png" } }){
            edges {
              node {
               childImageSharp{
-                sizes(maxWidth: 2000) {
+                sizes(maxWidth: 8000) {
                   ...GatsbyImageSharpSizes
                 }
               }
@@ -25,20 +25,65 @@ const Lyrics = ({ children }) => (
 
     render={data => (
       <>
+
+      <TopMargin/>
+
         <Container>
-          <StyledImg sizes={data.allFile.edges[0].node.childImageSharp.sizes} />
+          <StyledImg sizes={data.allFile.edges[15].node.childImageSharp.sizes} />
+        </Container>
+
+        <LyricsMargin/>
+
+        <Container>
+          <StyledImg sizes={data.allFile.edges[16].node.childImageSharp.sizes} />
+        </Container>
+        
+        <LyricsMargin/>
+
+        <Container>
+          <StyledImg sizes={data.allFile.edges[13].node.childImageSharp.sizes} />
+        </Container>
+
+        <Container>
+          <StyledImg sizes={data.allFile.edges[12].node.childImageSharp.sizes} />
+        </Container>
+
+        <Container>
+          <StyledImg sizes={data.allFile.edges[11].node.childImageSharp.sizes} />
+        </Container>
+
+        <Container>
+          <StyledImg sizes={data.allFile.edges[14].node.childImageSharp.sizes} />
         </Container>
         {children}
       </>
     )}
   />
 )
+//(filter:{ relativePath:{ eq:"allegory.png" } })
+
+const TopMargin = styled.div`
+{
+  margin: 0vh 0vw 14vh 0vw;
+
+}
+`
+
+const LyricsMargin = styled.div`
+{
+  margin: 0vh 0vw 14vh 0vw;
+}
+`
 
 const Container = styled.div`
 {
 
   width: 80%;
-  margin: 0vh 0vw 0vh 10vw; 
+  margin: 0vh 0vw 0vh 15vw;
+
+  @media (min-width: 800px){
+    margin: 0vh 0vw 0vh 8vw;
+  }
 }
 `
 

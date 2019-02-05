@@ -9,7 +9,7 @@ const Cover = ({ children }) => (
     query={graphql`
         query CoverQuery {
 
-          allFile (filter:{ relativePath:{ eq:"hoes.jpg" } }){
+          allFile (filter:{ relativePath:{ eq:"fotoLRes.jpg" } }){
            edges {
              node {
               childImageSharp{
@@ -37,7 +37,8 @@ const Cover = ({ children }) => (
 
 const Container = styled.div`
 {
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 `
 
@@ -49,6 +50,10 @@ transform: translateY(5%);
 margin: auto;
 width: 100%;
 
+@media (min-width: 500px) {
+  width: 80%;
+}
+
 @media (min-width: 660px) {
   width: 70%;
 }
@@ -59,7 +64,6 @@ width: 100%;
 
 @media (min-width: 950px) {
   width: 60%;
-  transform: translateY(-2%);
 }
 
 @media (min-width: 1050px) {
@@ -75,7 +79,7 @@ width: 100%;
 }
 
 @media (min-width: 1350px) {
-  width: 42%;
+  width: 40%;
 }
 
 `

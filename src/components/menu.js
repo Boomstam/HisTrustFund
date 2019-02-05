@@ -17,7 +17,7 @@ class Menu extends React.Component{
         const video = "/video";
         const words = "/words";
         const concerts = "/concerts";
-        const contact = "/contact";
+        const pressInfo = "/pressInfo";
 
     return(
             <StyledMenu>
@@ -37,8 +37,8 @@ class Menu extends React.Component{
                 <StyledLink to={concerts} onClick={(event) => this.handleClick(event, concerts)}>
                     Concerts
                 </StyledLink>
-                <StyledLink to={contact} onClick={(event) => this.handleClick(event, contact)}>
-                    Contact
+                <StyledLink to={pressInfo} onClick={(event) => this.handleClick(event, pressInfo)}>
+                    Press {"&"} Info
                 </StyledLink>
             </StyledMenu>
         );
@@ -66,8 +66,15 @@ const StyledLink = styled(Link)`
     text-align: center;
     line-height: 15vh;
 
+    hover: hotpink;
+
     text-decoration-line: none;
     color: white;
+
+    &:hover{
+        font-size: 10vmin;
+        color: white;
+    }
 `
 
 const TopMargin = styled.div`
