@@ -48,13 +48,14 @@ const StyledHamburger = styled.div`
 
   position: fixed;
   top: 0;
-  left: 1vw
-
-  width: 20vmin;
+  left: 1vw;
+  overflow: visible;
+  width: 16vmin;
 
   &:hover {
-    width: 22vmin;
+    width: 18vmin;
   }
+  
 `
 
 /*
@@ -64,7 +65,8 @@ const StyledHamburger = styled.div`
 
 const StyledImg = styled(Img)`
   
-  
+width: 100%;
+  overflow: visible;
   margin: 2vh 5vw 0vh 0vw;
 `
 
