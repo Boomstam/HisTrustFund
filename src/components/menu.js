@@ -5,6 +5,13 @@ import state from '../state/state'
 
 class Menu extends React.Component{
 
+    componentDidMount()
+    {
+        console.log("menu mount");
+        //state.menuToggler.close();
+        //state.menuToggler.close();
+    }
+
     handleClick(event)
     {
         state.menuToggler.close();
