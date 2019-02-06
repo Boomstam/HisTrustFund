@@ -14,6 +14,11 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `lyrics`,
@@ -59,3 +64,10 @@ module.exports = {
         mergeCachingHeaders: false
       },
     }*/
+
+    /*
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+      },
+    },*/
