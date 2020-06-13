@@ -9,11 +9,9 @@ const Concerts = () => (
   <>
     <Layout>
       <Title>
-        <Paragraph>As befits the angel</Paragraph>
-        <Paragraph>You sing a thousand joys</Paragraph>
+        <Paragraph>Let's sing a thousand joys</Paragraph>
       </Title>
-      <ConcertInfo date="22/2" venue="Het Bos" link="http://www.hetbos.be/agenda/2019/2/22/"/>
-      <ConcertInfo date="6/4" venue="Cactus Club" link="https://www.cactusmusic.be/NL/Concerten/Kalender/the-bony-king-of-nowhere"/>
+      <ConcertInfo date="17/10" venue="Handelsbeurs" link="https://www.handelsbeurs.be/nl/concert/kraakpand-met-oa-zee-skirts"/>
     </Layout>
   </>
 )

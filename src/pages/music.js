@@ -22,10 +22,7 @@ const Music = ({ data }) => {
 
             <Title>
             <Paragraph>
-            The melodies drifting 
-            </Paragraph>
-            <Paragraph>
-            from birdsong to the oceans rustling
+            Drifting in birdsong
             </Paragraph>
             </Title>
 
@@ -38,7 +35,7 @@ const Music = ({ data }) => {
             <PlayerContainer>
 
                 <SpotifyPlayer
-                    uri="spotify:album:6Bl9BTz1BAVTB9EJ1RLKJD"
+                    uri="spotify:artist:4np4RORjvCLrxNlor0zSm4"
                     size={size}
                     view={view}
                     theme={theme} />

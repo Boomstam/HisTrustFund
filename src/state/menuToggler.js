@@ -5,8 +5,8 @@ export default class MenuToggler {
         this.reRenderCallback = null;
     }
     
-    setReRenderCallback(callback){
-        
+    setReRenderCallback(callback)
+    {
         this.reRenderCallback = callback;
     }
 

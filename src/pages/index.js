@@ -4,8 +4,7 @@ import SEO from '../components/seo'
 import Cover from '../components/cover'
 import styled from 'styled-components';
 import Hoes from '../components/hoes'
-import * as Scroll from 'react-scroll'
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { animateScroll as scroll } from 'react-scroll'
 
 function epClick()
 {
@@ -25,7 +24,7 @@ const IndexPage = () => (
     </Title>
     <Cover />
     <EPText onClick={epClick}>
-      EP out now
+      Single 'Love is a Disease' out now
     </EPText>
   <Hoes/>
   </>
@@ -49,7 +48,7 @@ const Title = styled.div`
 const EPText = styled.div`
 {
   color: white;
-  font-size: 6vmin;
+  font-size: 5vmin;
   text-align: center;
   margin: 10vh 0vw 0vh 0vw;
 
@@ -58,7 +57,7 @@ const EPText = styled.div`
   }
 
   @media (min-width: 1150px) {
-    margin: 4vh 0vw 0vh 0vw;
+    margin: 10vh 0vw 0vh 0vw;
   }
 
   &: hover {

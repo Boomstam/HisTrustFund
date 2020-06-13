@@ -9,7 +9,7 @@ const Hoes = ({ children }) => (
     query={graphql`
         query HoesQuery {
 
-          allFile (filter:{ relativePath:{ eq:"hoes.jpg" } }){
+          allFile (filter:{ relativePath:{ eq:"FreeMarket.jpg" } }){
            edges {
              node {
               childImageSharp{
