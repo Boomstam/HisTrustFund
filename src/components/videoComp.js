@@ -28,7 +28,7 @@ constructor(props)
       For a glimpse beyond the veil
       </Paragraph>
       <Paragraph>
-      many beautiful killings were done
+      many killings were done
       </Paragraph>
       </Title>
 
@@ -97,7 +97,11 @@ const Title = styled.div`
 
 const Icon = styled.div`
 {
-    padding: 2vh 0vw 5vh 0vw;
+    padding: 2vh 0vw 0vh 0vw;
+
+    @media(min-width: 800px){
+      padding: 2vh 0vw 5vh 0vw;
+    }
 
     &: hover{
       width: 150%;

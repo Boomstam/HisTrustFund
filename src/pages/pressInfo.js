@@ -24,7 +24,7 @@ const PressInfo = () => (
 
 const Title = styled.div`
 {
-  padding: 15vh 0vw 0vh 0vw;
+  padding: 3vh 0vw 0vh 0vw;
   text-align: center;
   margin: auto;
 }
