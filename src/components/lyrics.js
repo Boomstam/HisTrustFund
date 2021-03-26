@@ -31,7 +31,7 @@ const Lyrics = ({ children }) => (
       <TopMargin/>
 
         <Container>
-          <StyledImg sizes={data.allFile.edges[0].node.childImageSharp.sizes} />
+          <StyledImg sizes={data.allFile.edges[2].node.childImageSharp.sizes} />
         </Container>
 
         <LyricsMargin/>
@@ -43,7 +43,7 @@ const Lyrics = ({ children }) => (
         <LyricsMargin/>
 
         <Container>
-          <StyledImg sizes={data.allFile.edges[2].node.childImageSharp.sizes} />
+          <StyledImg sizes={data.allFile.edges[0].node.childImageSharp.sizes} />
         </Container>
 
         <Container>
@@ -53,7 +53,11 @@ const Lyrics = ({ children }) => (
         <Container>
           <StyledImg sizes={data.allFile.edges[4].node.childImageSharp.sizes} />
         </Container>
-        
+
+        <Container>
+          <StyledImg sizes={data.allFile.edges[5].node.childImageSharp.sizes} />
+        </Container>
+
         {children}
       </>
     )}
