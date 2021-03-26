@@ -31,7 +31,7 @@ class NlContactData extends React.Component {
               <StyledLink href="http://www.allkindsofeverything.be/minnebo-meets-his-trust-fund/"> Musiczine</StyledLink> and 
               <StyledLink href="https://www.nieuwsblad.be/cnt/dmf20210129_95277237"> Het Nieuwsblad</StyledLink>.
               </NlText>
-            <p>His Trust Fund is </p>
+            <MemberTitle>His Trust Fund is </MemberTitle>
             <Member>Philippe François - Gitaar {"&"} stem</Member>
             <Member>Menno Buggenhout - Electrische gitaar</Member>
             <Member>Mattias Geernaert - Contrabas</Member>
@@ -78,11 +78,15 @@ class NlContactData extends React.Component {
           }
           `
 
-
           const Member = styled.p`
           {
-            text-color: white;
+            color: white;
             margin-bottom: 0px;
+          }`
+
+          const MemberTitle = styled.p`
+          {
+            color: white;
           }`
 
           const StyledLink = styled.a`
