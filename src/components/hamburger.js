@@ -51,6 +51,7 @@ const StyledHamburger = styled.div`
   left: 1vw;
   overflow: visible;
   width: 16vmin;
+  z-index: 10;
 
   &:hover {
     width: 18vmin;

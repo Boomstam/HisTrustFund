@@ -11,7 +11,9 @@ const Concerts = () => (
       <Title>
         <Paragraph>Let's sing a thousand joys</Paragraph>
       </Title>
-      <ConcertInfo date="17/10" venue="Handelsbeurs" link="https://www.handelsbeurs.be/nl/concert/kraakpand-met-oa-zee-skirts"/>
+      <ConcertInfo date="28/5" venue="Bar Leon" link="https://www.facebook.com/barleonantwerp"/>
+      <ConcertInfo date="6/6" venue="De Pul - NL (Solo)" link="https://www.livepul.com/agenda/singer-songwriter-sunday-19-meau-tangarine-uden/"/>
+      <ConcertInfo date="Uitgesteld" venue="Handelsbeurs" link="https://www.handelsbeurs.be/nl/concert/kraakpand-met-oa-zee-skirts"/>
     </Layout>
   </>
 )

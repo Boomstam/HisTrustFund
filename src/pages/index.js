@@ -2,37 +2,34 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Cover from '../components/cover'
-import styled from 'styled-components';
+import styled from 'styled-components'
 import Hoes from '../components/hoes'
 import { animateScroll as scroll } from 'react-scroll'
 
-function epClick()
-{
-  console.log("epCLick");
+function epClick() {
+    console.log("epCLick");
 
-  scroll.scrollToBottom();
+    scroll.scrollToBottom();
 }
 
 const IndexPage = () => (
-  
-  <>
-    <Layout>
+
+    <>
+    <Layout >
     </Layout>
-    
+
     <Title>
-      His Trust Fund
-    </Title>
-    <Cover />
-    <EPText onClick={epClick}>
-      Single 'Love is a Disease' out now
-    </EPText>
-  <Hoes/>
-  </>
+      His Trust Fund 
+    </Title>  
+    <Cover/>
+    <CDText onClick = { epClick }>
+      Debut album 'The Free Market Loves You' out now!
+    </CDText> 
+    <Hoes/>
+    </>
 )
 
-//<a id="header" href="[your link]">Logo</a>
-
-const Title = styled.div`
+const Title = styled.div `
 {
   color: white;
   font-size: 10vmin;
@@ -45,7 +42,7 @@ const Title = styled.div`
 }
 `
 
-const EPText = styled.div`
+const CDText = styled.div `
 {
   color: white;
   font-size: 5vmin;
@@ -62,6 +59,7 @@ const EPText = styled.div`
 
   &: hover {
     font-size: 7vmin;
+    cursor: pointer;
     transform: translate(0, -1vh);
   }
 }

@@ -39,6 +39,7 @@ const Facebook = ({ children }) => (
 
 const Container = styled.div`
 {
+  z-index: 11;
     position: fixed;
     bottom: 4vh;
     left: 4vh;
@@ -59,7 +60,7 @@ const Container = styled.div`
 
 const StyledImg = styled(Img)`
 
-z-index: 1;
+
 
 transform: translateY(5%);
 margin: auto;

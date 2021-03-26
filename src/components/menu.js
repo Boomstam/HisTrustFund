@@ -24,6 +24,7 @@ class Menu extends React.Component{
         const video = "/video";
         const words = "/words";
         const concerts = "/concerts";
+        const buyus = "/buyus";
         const pressInfo = "/pressInfo";
 
     return(
@@ -44,8 +45,11 @@ class Menu extends React.Component{
                 <StyledLink to={concerts} onClick={(event) => this.handleClick(event, concerts)}>
                     Concerts
                 </StyledLink>
+                <StyledLink to={buyus} onClick={(event) => this.handleClick(event, buyus)}>
+                    Buy us
+                </StyledLink>
                 <StyledLink to={pressInfo} onClick={(event) => this.handleClick(event, pressInfo)}>
-                    Press {"&"} Info
+                    About
                 </StyledLink>
             </StyledMenu>
         );
@@ -59,7 +63,7 @@ const StyledMenu = styled.div`
     top: 0;
     height: 100%;
     width: 100%;
-  
+    z-index: 10;
     background-color: rgba(0.8, 0.8, 0.8, 0.8);
     background-size: cover;
     
@@ -69,9 +73,9 @@ const StyledMenu = styled.div`
 
 const StyledLink = styled(Link)`
     
-    font-size: 8vmin;
+    font-size: 6vmin;
     text-align: center;
-    line-height: 15vh;
+    line-height: 10vh;
 
     hover: hotpink;
 
@@ -79,14 +83,14 @@ const StyledLink = styled(Link)`
     color: white;
 
     &:hover{
-        font-size: 10vmin;
+        font-size: 7vmin;
         color: white;
     }
 `
 
 const TopMargin = styled.div`
     
-    padding: 3vh;
+    padding: 8vh;
 `
     
 export default Menu;

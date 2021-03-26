@@ -36,25 +36,56 @@ constructor(props)
             <LinkIcon image={this.props.image}
             link="https://www.youtube.com/channel/UCosvQvCPE5K1D6VCcJF3k4w/featured">
             </LinkIcon>
-            </Icon>
+      </Icon>
 
 
       <YTContainers>
 
-
       <YouTubeContainer>
           <YouTube
-            videoId="XGuxrcRbVPM"
+            videoId="qWdlJfAnx6E"
             opts={opts}
-            onReady={this._onReady}
+            //onReady={this._onReady}
+          />
+        </YouTubeContainer>
+        
+        <YouTubeContainer>
+          <YouTube
+            videoId="OkolPGavo94"
+            opts={opts}
+            //onReady={this._onReady}
           />
         </YouTubeContainer>
 
         <YouTubeContainer>
           <YouTube
+            videoId="YyTHoSLITmo"
+            opts={opts}
+            //onReady={this._onReady}
+          />
+        </YouTubeContainer>
+
+        <YouTubeContainer>
+          <YouTube
+            videoId="z6ahuD4gsBI"
+            opts={opts}
+            //onReady={this._onReady}
+          />
+        </YouTubeContainer>
+        
+      <YouTubeContainer>
+          <YouTube
+            videoId="XGuxrcRbVPM"
+            opts={opts}
+            //onReady={this._onReady}
+          />
+        </YouTubeContainer>
+        
+        <YouTubeContainer>
+          <YouTube
             videoId="h3-5VFtjbQk"
             opts={opts}
-            onReady={this._onReady}
+            //onReady={this._onReady}
           />
         </YouTubeContainer>
 
@@ -62,7 +93,7 @@ constructor(props)
           <YouTube
             videoId="cYOy0XNzOxE"
             opts={opts}
-            onReady={this._onReady}
+            //onReady={this._onReady}
           />
         </YouTubeContainer>
 
@@ -70,7 +101,7 @@ constructor(props)
           <YouTube
             videoId="2lKPPnY-Zpc"
             opts={opts}
-            onReady={this._onReady}
+            //onReady={this._onReady}
           />
         </YouTubeContainer>
         </YTContainers>

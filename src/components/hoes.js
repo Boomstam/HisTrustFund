@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import state from '../state/state'
@@ -9,7 +9,7 @@ const Hoes = ({ children }) => (
     query={graphql`
         query HoesQuery {
 
-          allFile (filter:{ relativePath:{ eq:"FreeMarket.jpg" } }){
+          allFile (filter:{ relativePath:{ eq:"freeMarket.png" } }){
            edges {
              node {
               childImageSharp{
@@ -28,6 +28,11 @@ const Hoes = ({ children }) => (
       <>
         <Container>
           <StyledImg sizes={data.allFile.edges[0].node.childImageSharp.sizes} />
+
+        <BuyLink to={"/buyus"}>
+          Buy Now
+        </BuyLink>
+
         </Container>
         {children}
       </>
@@ -35,6 +40,55 @@ const Hoes = ({ children }) => (
   />
 )
 
+
+
+const BuyLink = styled(Link)`
+{
+  font-size: 6vmin;
+  color: white;
+    position: absolute;
+  padding: 0vh 0vw 10vh 0vw;
+  line-height: 10vh;
+
+  @media (min-width: 500px) {
+    padding: 0vh 0vw 20vh 0vw;
+  }
+
+  z-index: 1;
+  top: 80vh;
+  left: 35vw;
+  width: 80%;
+  margin: auto;
+
+    &:hover{
+        font-size: 7vmin;
+        margin: 0vh 0vw 0vh -1vw;
+        color: white;
+        
+    }
+    
+}
+`
+/*
+
+  color: white;
+  
+  margin: 0vh 0vw 0vh 33vw;
+  padding: 10vh 0vw 0vh 0vw;
+
+  font-size: 6vmin;
+    text-align: center;
+    line-height: 15vh;
+
+    hover: hotpink;
+
+    text-decoration-line: none;
+    color: white;
+
+@media (min-width: 550px) {
+      margin: 20vh 0vw 2vh 0vw;
+    }
+*/
 const Container = styled.div`
 {
   position: absolute;

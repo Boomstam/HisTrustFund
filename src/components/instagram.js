@@ -39,6 +39,7 @@ const Instagram = ({ children }) => (
 
 const Container = styled.div`
 {
+  z-index: 11;
     position: fixed;
     bottom: 2vh;
     right: 2vh;
@@ -58,8 +59,6 @@ const Container = styled.div`
 `
 
 const StyledImg = styled(Img)`
-
-z-index: 1;
 
 transform: translateY(5%);
 margin: auto;

@@ -4,9 +4,8 @@ import Img from 'gatsby-image';
 import styled from 'styled-components';
 import state from '../state/state'
 
-const Cover = ({ children }) => (
-  <StaticQuery
-    query={graphql`
+const Cover = ({ children }) => ( <
+    StaticQuery query = { graphql `
         query CoverQuery {
 
           allFile (filter:{ relativePath:{ eq:"fotoLRes.jpg" } }){
@@ -22,28 +21,31 @@ const Cover = ({ children }) => (
        }
 
     }
-      `}
+      ` }
 
-    render={data => (
-      <>
-        <Container>
-          <StyledImg sizes={data.allFile.edges[0].node.childImageSharp.sizes} />
-        </Container>
-        {children}
-      </>
-    )}
-  />
+    render = {
+        data => ( 
+        <>
+            <Container >
+                <StyledImg sizes = { data.allFile.edges[0].node.childImageSharp.sizes }/> 
+            </Container> { children } 
+        </>
+        )
+    }
+    />
 )
 
-const Container = styled.div`
+const Container = styled.div `
 {
+  font-family: "object-fit: VALUE_HERE; object-position: VALUE_HERE";
   width: 80%;
-  margin: auto;
+  margin-left: 10%;
   z-index: -1;
 }
 `
 
-const StyledImg = styled(Img)`
+const StyledImg = styled(Img)
+`
 
 z-index: -1;
 
