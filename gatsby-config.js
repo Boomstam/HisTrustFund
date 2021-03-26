@@ -24,13 +24,13 @@ module.exports = {
         features: [`Array.prototype.map`, `fetch`]
       },
     },
-    {
+    /*{
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `lyrics`,
         path: `${__dirname}/src/lyrics`,
       },
-    },
+    },*/
     {
       resolve: `gatsby-source-filesystem`,
       options: {
