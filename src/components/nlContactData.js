@@ -19,8 +19,8 @@ class NlContactData extends React.Component {
         <BioTitle>
           His Trust Fund
         </BioTitle>
+
         <BioBand>
-        
         <p>His Trust Fund is het geesteskind van songwriter Philippe François die weet dat het hoogste goed van de mensheid het kapitaal van het hart is. His Trust Fund is de cocon die hij rond zijn songs heeft gesponnen, waarin deze tot ontpoppen kunnen komen. Naar eigen zeggen maken ze tekstueel gedreven symfonische folkrootspop in kleine bezetting. </p>
         <p>Na vele jaren de barren en kleinere podia in Vlaanderen en Groot-Brittanië afgeschuimd te hebben brachten ze hun eerste EP uit in september 2018, onder de wakende oren van Peter De Smedt en Alban Sarens. In 2019 doken ze Studio La Patrie van producer-magiër Koen Gisen in. Hij werkte eerder al met sonore namen als An Pierlé, Dans Dans, The Bony King Of Nowhere, …  In januari 2021 werd het debuut album The Free Market Loves You de wereld in gestuurd.  </p>
         <p>Daarop toont de band z’n volledige kunnen. Ze sluipen moeiteloos door de voor en achterkamers van de populaire muziek: country ballads, old school reggae, serenades van een Latijns-Amerikaanse aandoende zoetheid, rauwe gitaarfolk gespeeld als vanop een krakende porch, een stomend verzetslied tegen racisme, …</p>
@@ -29,7 +29,8 @@ class NlContactData extends React.Component {
               <StyledLink href="https://www.enola.be/2021/01/29/philippe-francois-his-trust-fund-ik-kan-me-grondig-storen-aan-hoe-stiefmoederlijk-artiesten-hun-teksten-behandelen/"> Enola</StyledLink>, 
               <StyledLink href="https://luminousdash.be/interview/his-trust-fund/"> Luminous Dash</StyledLink>, 
               <StyledLink href="http://www.allkindsofeverything.be/minnebo-meets-his-trust-fund/"> Musiczine</StyledLink> and 
-              <StyledLink href="https://www.nieuwsblad.be/cnt/dmf20210129_95277237"> Het Nieuwsblad</StyledLink>.</p>
+              <StyledLink href="https://www.nieuwsblad.be/cnt/dmf20210129_95277237"> Het Nieuwsblad</StyledLink>.
+              </p>
             <p>His Trust Fund is </p>
             <Member>Philippe François - Gitaar {"&"} stem</Member>
             <Member>Menno Buggenhout - Electrische gitaar</Member>

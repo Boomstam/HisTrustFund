@@ -60,9 +60,6 @@ const PressInfo = ({ children }) => ( <
           />
         </YouTubeContainer>
         <EndSpace/>
-              <div>
-                
-              </div>
         
             </Layout>
             
