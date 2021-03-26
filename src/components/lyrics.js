@@ -8,7 +8,9 @@ const Lyrics = ({ children }) => (
     query={graphql`
         query LyricsQuery {
 
-          allFile (filter:{ ext:{ eq:".png" } }){
+          allFile (filter:{ relativePath:{ in:[
+            "allegory.png", "bait.png",  "love.png", "love2.png", "roleModel.png", "tyche.png"
+            ]} }){
            edges {
              node {
               childImageSharp{
@@ -29,37 +31,40 @@ const Lyrics = ({ children }) => (
       <TopMargin/>
 
         <Container>
-          <StyledImg sizes={data.allFile.edges[15].node.childImageSharp.sizes} />
+          <StyledImg sizes={data.allFile.edges[0].node.childImageSharp.sizes} />
         </Container>
 
         <LyricsMargin/>
 
         <Container>
-          <StyledImg sizes={data.allFile.edges[16].node.childImageSharp.sizes} />
+          <StyledImg sizes={data.allFile.edges[1].node.childImageSharp.sizes} />
         </Container>
         
         <LyricsMargin/>
 
         <Container>
-          <StyledImg sizes={data.allFile.edges[13].node.childImageSharp.sizes} />
+          <StyledImg sizes={data.allFile.edges[2].node.childImageSharp.sizes} />
         </Container>
 
         <Container>
-          <StyledImg sizes={data.allFile.edges[12].node.childImageSharp.sizes} />
+          <StyledImg sizes={data.allFile.edges[3].node.childImageSharp.sizes} />
         </Container>
 
         <Container>
-          <StyledImg sizes={data.allFile.edges[11].node.childImageSharp.sizes} />
+          <StyledImg sizes={data.allFile.edges[4].node.childImageSharp.sizes} />
         </Container>
-
-        <Container>
-          <StyledImg sizes={data.allFile.edges[14].node.childImageSharp.sizes} />
-        </Container>
+        
         {children}
       </>
     )}
   />
 )
+
+/*
+<Container>
+          <StyledImg sizes={data.allFile.edges[5].node.childImageSharp.sizes} />
+        </Container>
+*/
 //(filter:{ relativePath:{ eq:"allegory.png" } })
 
 const TopMargin = styled.div`
