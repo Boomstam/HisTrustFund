@@ -19,22 +19,18 @@ const Concerts = () => (
 )
 
 const Paragraph = styled.div`
-{
   color: white;
   text-align: center;
   margin: auto;
   padding: 0vh 0vw 1vh 0vw;
   font-size: 5vmin;
   font-style: italic;
-}
 `
 
 const Title = styled.div`
-{
   padding: 3vh 0vw 3vh 0vw;
   text-align: center;
   margin: auto;
-}
 `
 
 export default Concerts;
