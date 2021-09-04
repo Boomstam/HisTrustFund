@@ -40,42 +40,30 @@ const DataContainer = styled.div`
     rgba(50, 79, 111, 0.2), 
     rgba(157, 192, 216, 0.3), 
     rgba(50, 79, 111, 0.2));
-
     margin: 3vh 5vw 3vh 5vw;
-}`
+`
 
 const ConcertData = styled.div`
-{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     padding: 10vh 0vw 10vh 0vw;
     margin: 3vh 5vw 3vh 5vw;
-}`
+    font-size: 3vw;
+`
 
 const Date = styled.div`
-{
     color: white;
-    font-size: 5vw;
     font-weight: bold;
-}
 `
 
 const Venue = styled.div`
-{
     color: white;
-    font-size: 5vw;
-}
 `
 
 const ConcertLink = styled.a`
-{   
     color: white;
-    text-decoration-line: none; 
-
-    font-size: 5vw;
-}
+    text-decoration-line: none;
 `
 
 export default ConcertInfo;

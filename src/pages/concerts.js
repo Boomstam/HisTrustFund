@@ -13,8 +13,8 @@ const Concerts = () => (
       </Title>
       <ConcertInfo date="16/9" venue="De Bunker - Gemert NL" link="https://www.bunkergemert.nl/agenda/"/>
       <ConcertInfo date="19/9" venue="Sunday Mundane - Gent" link="https://facebook.com/events/s/sunday-mundane-theresia-gent/271137941524015/"/>
-      <ConcertInfo date="6/11" venue="Cinema Klappei" link="https://www.klappei.be/"/>
-      <ConcertInfo date="9/12" venue="Uden - NL" link="https://www.livepul.com/agenda/singer-songwriter-sunday-vlaamse-editie/"/>
+      <ConcertInfo date="6/11" venue="Cinema Klappei - Antwerpen" link="https://www.klappei.be/"/>
+      <ConcertInfo date="9/12" venue="De Pul - Uden NL" link="https://www.livepul.com/agenda/singer-songwriter-sunday-vlaamse-editie/"/>
     </Layout>
   </>
 )

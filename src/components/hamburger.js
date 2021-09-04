@@ -45,28 +45,21 @@ const Hamburger = ({ children }) => (
 )
 
 const StyledHamburger = styled.div`
-
   position: fixed;
   top: 0;
   left: 1vw;
   overflow: visible;
   width: 16vmin;
   z-index: 10;
+  cursor: pointer;    
 
   &:hover {
     width: 18vmin;
-  }
-  
+  } 
 `
 
-/*
-  position: fixed;
-  top: 0;
-  left: 1vw;*/
-
 const StyledImg = styled(Img)`
-  
-width: 100%;
+  width: 100%;
   overflow: visible;
   margin: 2vh 5vw 0vh 0vw;
 `
